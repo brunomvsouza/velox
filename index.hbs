@@ -4,10 +4,6 @@
   {{#if @blog.logo}}<a href="{{@blog.url}}"><div style="background: url({{@blog.logo}})"></div></a>{{/if}}
   <h1 class="blog_title margin_bottom_small"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
   <h4 class="text book">{{@blog.description}}</h4>
-  {{!
-    Here, you can add your nav menu.
-    Also go to partials/nav-menu.hbs to set your links.
-  }}
   {{> nav-menu}}
 </header>
 
@@ -21,7 +17,7 @@
     </header>
 
     <section class="post-excerpt">
-      <p>{{excerpt}}&hellip;</p>
+      <p>{{{excerpt characters="300"}}} &hellip;</p>
       <h5><a class="text book small uppercase color c_blue" href="{{url}}">Read this article <i class="fa fa-chevron-circle-right"></i></a></h5>
     </section>
   </article>

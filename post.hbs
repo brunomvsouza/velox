@@ -4,10 +4,6 @@
   {{#if @blog.logo}}<a href="{{@blog.url}}"><div style="background: url({{@blog.logo}})"></div></a>{{/if}}
   <h1 class="blog_title margin_bottom_small"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
   <h4 class="text book">{{@blog.description}}</h4>
-  {{!
-    Here, you can add your nav menu.
-    Also go to partials/nav-menu.hbs to set your links.
-  }}
   {{> nav-menu}}
 </header>
 
@@ -39,10 +35,8 @@
 
     {{/post}}
 
-    {{!
-      Here, you can add disqus comment.
-      Also go to partials/disqus-comment to set your SHORTNAME.
-    }}
-    {{!> disqus-comment}}
+    {{> disqus-comment}}
     </article>
 </main>
+
+{{> highlight-footer}}
