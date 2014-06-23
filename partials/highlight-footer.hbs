@@ -1,2 +1,8 @@
 <script src="//cdnb.co/b/3rd-party/highlight/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script>
+    hljs.configure({
+        tabReplace: '    ',
+        languages: ['nginx', 'php', 'bash', 'javascript', 'ruby']
+    });
+    hljs.initHighlightingOnLoad();
+</script>
